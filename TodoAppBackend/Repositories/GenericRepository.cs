@@ -1,7 +1,6 @@
 ﻿using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
 using TodoAppBackend.Models;
-using TodoAppBackend.Repositories.Contracts;
 
 namespace TodoAppBackend.Repositories
 {
