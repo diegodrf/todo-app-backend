@@ -46,7 +46,7 @@ CREATE TABLE [Todos] (
     CompletedAt DATETIME2
 );
 
-INSERT INTO [Todos] VALUES 
+INSERT INTO [ToDos] VALUES 
 ('First todo','lorem ipsum',1,GETDATE(),NULL),
 ('Todo tile','lorem ipsum',1,GETDATE(),GETDATE()),
 ('Title', 'lorem ipsum', 1, GETDATE(), NULL),
