@@ -1,4 +1,6 @@
-﻿namespace TodoAppBackend.Models
+﻿using System.Text.Json.Serialization;
+
+namespace TodoAppBackend.Models
 {
     public class User: Entity
     {
@@ -6,6 +8,7 @@
         private readonly ICollection<ToDo> _toDos = new List<ToDo>();
 
         public string Username { get; set; } = default!;
+        [JsonIgnore]
         public string PasswordHash { get; set; } = default!;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public bool Blocked { get; set; }

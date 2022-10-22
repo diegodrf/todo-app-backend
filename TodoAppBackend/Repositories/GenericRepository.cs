@@ -24,7 +24,7 @@ namespace TodoAppBackend.Repositories
             await _dbConnection.DeleteAsync<T>(model);
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public virtual async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _dbConnection.GetAllAsync<T>();
         }
